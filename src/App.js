@@ -17,10 +17,9 @@ function App() {
       <Speakers/>
       <Speakers2/>
       <Speakers3/>
-      <Faq/>
       {/* <Footer/> */}
     </div>
-    
+
   );
 }
 
