@@ -11,15 +11,19 @@ const Info = () => {
 
         </div>
         <div className='grid sm:grid-cols-2 gap-8'>
-            <div className=' mx-auto lg:w-[50%] w-full shadow-2xl flex flex-col p-4 my-4 text-center rounded-lg hover:scale-105 duration-300'>
+            <div className=' mx-auto lg:w-[50%] w-full shadow-2xl flex flex-col p-4 my-4 bg-white text-center rounded-lg hover:scale-105 duration-300'>
                 <AiOutlineBulb color='orange' size={20}/>
                 <p className='font-gmed p-2 text-black'>Find out what neurodivergence is, and how it makes a difference to others</p>
-                <p className='font-gmed text-blue-600'>Learn more</p>
+                <p className='font-gmed text-blue-600'>
+                <a className="link link-hover">Learn more</a>
+                </p>
             </div>
-            <div className=' mx-auto lg:w-[50%] w-full shadow-2xl flex flex-col p-4 my-4 text-center rounded-lg hover:scale-105 duration-300'>
+            <div className=' mx-auto lg:w-[50%] w-full shadow-2xl flex flex-col p-4 my-4 bg-white text-center rounded-lg hover:scale-105 duration-300'>
                 <MdPeopleAlt color='green' size={20}/>
                 <p className='font-gmed p-2 text-black'>Explore a variety of solutions and ideas to help overcome these</p>
-                <p className='font-gmed text-blue-600'>Learn more</p>
+                <p className='font-gmed text-blue-600'>
+                <a className="link link-hover" href='https://info.kpmg.us/news-perspectives/technology-innovation/neurodiversity-in-tech.html'>Learn more</a>
+                </p>
             </div>
 
             </div>

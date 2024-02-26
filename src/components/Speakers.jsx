@@ -1,10 +1,12 @@
 import React from 'react'
 import trishala from "../assets/trishala.jpg"
-import vibin from "../assets/vibin.jpg"
+import vibin from "../assets/vipin.jpeg"
 import kiran from "../assets/kiran.jpg"
 import don from "../assets/don.jpg"
-import anju from "../assets/anju.jpg"
+import anju from "../assets/anju.jpeg"
 import ananya from "../assets/ananya.jpg"
+import arun from "../assets/arun.jpeg"
+import reshmi from "../assets/reshmi.jpg"
 
 
 
@@ -46,13 +48,25 @@ const Speakers = () => {
       organization: 'Global Community Manager, She Loves Tech',
       image: ananya,
     },
+    {
+      name: 'Arun C Rao',
+      role: 'Neurodivergence in Technology',
+      organization: 'Head of marketing - SignAble Communications',
+      image: arun,
+    },
+    {
+      name: 'Reshmi Ravindranathan',
+      role: 'Accessibility',
+      organization: 'Associate Consultant -TCS',
+      image: reshmi,
+    },
   ];
 
   const SpeakerList = () => {
     return (
       <div>
         {speakersData.map((speaker, index) => (
-          <div key={index} className='grid grid-cols-3 h-72 border-black rounded-md  row-span-3 m-4  border-2 border-opacity-50 overflow-hidden hover:scale-105 duration-300'>
+          <div key={index} className='grid grid-cols-3 h-72 border-black rounded-md  row-span-3 m-4  border-2 border-opacity-50 overflow-hidden hover:scale-105 duration-300 bg-white'>
             <div className='col-span-2 p-4'>
               <div className='h-full flex flex-col text-left'>
                 <h1 className='text-3xl font-gbold text-black'>{speaker.name}</h1>
@@ -85,7 +99,7 @@ const Speakers = () => {
   return (
     <div className='w-full max-w-[1340px] h-auto mx-auto grid'>
       <div className='w-[50%] mx-auto text-center'>
-        <h1 className='text-5xl font-gbold py-4'>Events for <span className='text-blue-600'>everyone</span></h1>
+        <h1 className='text-5xl font-gbold py-4 text-black'>Events for <span className='text-blue-600'>everyone</span></h1>
         <p className='p-2 font-gbold text-slate-900'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo at maiores iure asperiores iste, neque inventore cum ullam. Dolor, iure?</p>
       </div>
 

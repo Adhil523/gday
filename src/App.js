@@ -5,6 +5,7 @@ import Info from "./components/Info";
 import Speakers from "./components/Speakers";
 import Footer from "./components/Footer";
 import Faq from "./components/Faq";
+// import Partners from "./components/Partners";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <Landing/>
       <Info/>
       <Speakers/>
+      {/* <Partners/> */}
+      <Faq/>
       <Footer/>
     </div>
 
