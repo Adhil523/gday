@@ -52,8 +52,8 @@ const Speakers = () => {
     return (
       <div>
         {speakersData.map((speaker, index) => (
-          <div key={index} className='grid grid-cols-3 h-72 border-black rounded-md  row-span-3 m-4 p-4 border-2 border-opacity-50 overflow-hidden hover:scale-105 duration-300'>
-            <div className='col-span-2'>
+          <div key={index} className='grid grid-cols-3 h-72 border-black rounded-md  row-span-3 m-4  border-2 border-opacity-50 overflow-hidden hover:scale-105 duration-300'>
+            <div className='col-span-2 p-4'>
               <div className='h-full flex flex-col text-left'>
                 <h1 className='text-3xl font-gbold '>{speaker.name}</h1>
                 <h2 className='text-slate-500  font-greg'>{speaker.role}</h2>
