@@ -7,11 +7,11 @@ const Navbar = () => {
       <div className='flex flex-col sm:flex-row sm:justify-center sm:items-center sm:gap-x-4  '>
         <div className='flex gap-x-2 '>
           <img src={gdsc} alt='logo' className='w-10  h-10'></img>
-          <h1 className='m-auto text-base line-clamp-1 sm:text-3xl font-greg w-full'>GDSC Gect</h1>
+          <h1 className='m-auto text-base line-clamp-1 sm:text-3xl font-greg w-full text-black'>GDSC Gect</h1>
         </div>
         <div className='flex gap-x-2'>
           <img src={gdsc} alt='logo' className='w-10 h-10'></img>
-          <h1 className='m-auto text-base line-clamp-1 sm:text-3xl font-greg'>GDSC Kerala</h1>
+          <h1 className='m-auto text-base line-clamp-1 sm:text-3xl font-greg text-black'>GDSC Kerala</h1>
         </div>
       </div>
       <div className='ml-auto my-4 '>

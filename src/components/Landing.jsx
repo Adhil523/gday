@@ -9,11 +9,11 @@ const Landing = () => {
       <div className='p-5 sm:pt-8 sm:pl-8 flex flex-col w-full'>
         <div className='flex'>
           <img alt='/' src={dino} className='w-10 h-6 object-contain'></img>
-          <h1 className='text-xl font-greg'><span className='font-gbold'>Google</span> Developers Student Clubs</h1>
+          <h1 className='text-xl font-greg text-black'><span className='font-gbold'>Google</span> Developers Student Clubs</h1>
         </div>
-        <ReactTyped strings={["GDSC Day"]} typeSpeed={120} backspeed={140} className='text-8xl font-pixel pt-2 tracking-wider text'></ReactTyped>
+        <ReactTyped strings={["GDSC Day"]} typeSpeed={120} backspeed={140} className='text-8xl text-black font-pixel pt-2 tracking-wider text'></ReactTyped>
         {/* <h1 className='text-8xl font-pixel pt-2 tracking-wider text'>GDSC day</h1> */}
-        <h2 className='text-xl opacity-50 font-greg pl-4'>Mar 2</h2>
+        <h2 className='text-xl opacity-50 font-greg pl-4 text-slate-600'>March 2</h2>
       </div>
 
       <div className=' flex-col sm:flex-row flex w-full sm:w-auto'>
