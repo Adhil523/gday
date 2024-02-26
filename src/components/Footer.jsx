@@ -8,7 +8,6 @@ const Footer = () => {
   return (
     <div className='h-24 bg-gradient-to-t from-neutral-200 via-neutral-300 to-white'>
         <div className='h-full flex gap-4 px-4'>
-            <img src={gdsc} alt='/' className='h-full'></img>
             <p className='text-center mt-auto mb-auto font-gmed md:text-xl text-black text-base'>GDSC GECT</p>
             <p className='text-center mt-auto mb-auto font-gmed md:text-xl text-black text-base'>|</p>
             <p className='text-center mt-auto mb-auto font-gmed md:text-xl text-black text-base'> GDSC KERALA</p>
