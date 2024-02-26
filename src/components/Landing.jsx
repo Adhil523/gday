@@ -20,7 +20,7 @@ const Landing = () => {
         <div className='p-1 w-full sm:w-1/2 flex items-center justify-center sm:block'>
           <button className='sm:ml-8 bg-blue-600 w-[200px] mx-auto rounded-lg py-2.5 font-medium text-white'>Let's Go</button>
         </div>
-        <img src={Pic1} alt='/' className=' mt-12 mx-auto sm:mt-[-4rem] md:size-min  w-full sm:w-1/2 h-64'></img>
+        <img src={Pic1}  alt='/' className='sm:h-[30vh] mx-auto'></img>
       </div>
     </div>
   )

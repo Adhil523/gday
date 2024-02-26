@@ -3,18 +3,20 @@ import gdsc from '../assets/gdsc-logo.png'
 
 const Navbar = () => {
   return (
-    <div className='w-full h-20 max-w-[1340px] flex border-b-2 mx-auto border-opacity-50 border-black pb-4 gap-2 '>
-        <div className='p-2 flex'>
-            <img src={gdsc} alt=''></img>
-            <h1 className='m-auto text-3xl font-greg'>GDSC Gect</h1>
+    <div className='w-full  h-20 flex border-b-2  border-opacity-50 border-black  gap-2 px-4  sm:px-8 items-center justify-center'>
+      <div className='flex flex-col sm:flex-row sm:justify-center sm:items-center sm:gap-x-4  '>
+        <div className='flex gap-x-2 '>
+          <img src={gdsc} alt='logo' className='w-10  h-10'></img>
+          <h1 className='m-auto text-base line-clamp-1 sm:text-3xl font-greg w-full'>GDSC Gect</h1>
         </div>
-        <div className='p-2 flex'>
-            <img src={gdsc} alt=''></img>
-            <h1 className='m-auto text-3xl font-greg'>GDSC Kerala</h1>
+        <div className='flex gap-x-2'>
+          <img src={gdsc} alt='logo' className='w-10 h-10'></img>
+          <h1 className='m-auto text-base line-clamp-1 sm:text-3xl font-greg'>GDSC Kerala</h1>
         </div>
-        <div className='ml-auto my-4 '>
-            <button className='rounded-lg bg-blue-500 p-2 font-greg'>Register now</button>
-        </div>
+      </div>
+      <div className='ml-auto my-4 '>
+        <button className='rounded-lg  text-base sm:text-lg text-white bg-blue-500 p-2 font-greg'>Register now</button>
+      </div>
     </div>
   )
 }
