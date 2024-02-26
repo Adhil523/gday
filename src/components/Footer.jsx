@@ -9,7 +9,7 @@ const Footer = () => {
     <div className='h-24 bg-gradient-to-t from-neutral-200 via-neutral-300 to-white'>
         <div className='h-full flex gap-4 px-4'>
             <p className='text-center mt-auto mb-auto font-gmed md:text-xl text-black text-base'>GDSC GECT</p>
-            <p className='text-center mt-auto mb-auto font-gmed md:text-xl text-black text-base'>|</p>
+            <p className='text-center mt-auto mb-auto font-gmed md:text-xl text-black text-base'>X</p>
             <p className='text-center mt-auto mb-auto font-gmed md:text-xl text-black text-base'> GDSC KERALA</p>
             <div className='flex gap-8 ml-auto mt-auto mb-auto'>
             <MdOutlineEmail size={20} color='black'/>
