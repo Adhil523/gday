@@ -6,6 +6,7 @@ import Speakers from "./components/Speakers";
 import Speakers2 from "./components/Speakers2";
 import Speakers3 from "./components/Speakers3";
 import Footer from "./components/Footer";
+import Faq from "./components/Faq";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <Speakers/>
       <Speakers2/>
       <Speakers3/>
-      <Footer/>
+      <Faq/>
+      {/* <Footer/> */}
     </div>
     
   );

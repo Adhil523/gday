@@ -5,10 +5,10 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const Speakers = () => {
   return (
-    <div className='w-full max-w-[1340px] h-screen mx-auto grid'>
+    <div className='w-full max-w-[1340px] md:h-screen mx-auto grid h-auto'>
         <div className='w-[50%] mx-auto text-center'>
-            <h1 className='text-5xl font-gbold py-4'>Events for <span className='text-blue-600'>everyone</span></h1>
-            <p className='p-2 font-gbold text-slate-900'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo at maiores iure asperiores iste, neque inventore cum ullam. Dolor, iure?</p>
+            <h1 className=' text-3xl md:text-5xl font-gbold py-4'>Events for <span className='text-blue-600'>everyone</span></h1>
+            <p className='p-2 font-gbold text-slate-900 md:text-base text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo at maiores iure asperiores iste, neque inventore cum ullam. Dolor, iure?</p>
         </div>
         <div className='grid grid-cols-3 border-black rounded-md w-full row-span-3 my-2 border-2 border-opacity-50 overflow-hidden hover:scale-105 duration-300'>
             <div className='col-span-2'>

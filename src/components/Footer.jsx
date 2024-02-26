@@ -6,12 +6,12 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='w-full h-24 bg-zinc-500 mt-4'>
-        <div className='max-w-[1240px] w-full h-full flex gap-4 mx-auto'>
+    <div className='h-24 bg-zinc-500 mt-4 w-full'>
+        <div className='h-full flex gap-4 mx-auto'>
             <img src={gdsc} alt='/' className='h-full'></img>
-            <p className='text-center mt-auto mb-auto font-gmed text-xl'>GDSC GECT</p>
-            <p className='text-center mt-auto mb-auto font-gmed text-xl'>|</p>
-            <p className='text-center mt-auto mb-auto font-gmed text-xl'> GDSC KERALA</p>
+            <p className='text-center mt-auto mb-auto font-gmed md:text-xl text-base'>GDSC GECT</p>
+            <p className='text-center mt-auto mb-auto font-gmed md:text-xl text-base'>|</p>
+            <p className='text-center mt-auto mb-auto font-gmed md:text-xl text-base'> GDSC KERALA</p>
             <div className='flex gap-8 ml-auto mt-auto mb-auto'>
             <MdOutlineEmail size={30}/>
             <FaInstagram size={30}/>
