@@ -2,7 +2,6 @@ import React from 'react'
 import Pic1 from '../assets/pic1.png'
 import dino from '../assets/dinosaur.png'
 import { ReactTyped } from "react-typed";
-import Fade from 'react-reveal/Fade'
 
 const Landing = ({text,image,colour}) => {
 
@@ -31,9 +30,9 @@ const Landing = ({text,image,colour}) => {
 
           {/* <button className={!colour?'sm:ml-8 bg-blue-600 w-[200px] mx-auto rounded-lg py-2.5 font-medium text-white' : 'sm:ml-8 bg-black w-[200px] mx-auto rounded-lg py-2.5 font-medium text-white'}>Register</button> */}
         </div>
-        <Fade top distance="50%">
+  
         <img src={Pic1}  alt='/' className={!image ? 'sm:h-[30vh] mx-auto' : 'hidden'}></img>
-        </Fade>
+      
       </div>
     </div>
   )

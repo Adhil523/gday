@@ -7,17 +7,18 @@ import anju from "../assets/anju.jpeg"
 import ananya from "../assets/ananya.jpg"
 import arun from "../assets/arun.jpeg"
 import reshmi from "../assets/reshmi.jpg"
-import Fade from 'react-reveal/Fade'
+// import Fade from 'react-reveal/Fade'
+import {motion} from "framer-motion"
 
 
 
-const Speakers = ({text,image,colour}) => {
+const Speakers = ({text,image,colour,ani}) => {
   const speakersData = [
     {
-      name: 'Trishala Pillai',
-      role: 'Women in Tech',
-      organization: 'Board member at AnitaB.org',
-      image: trishala,
+      name: 'Don Paul',
+      role: 'Enable differently-abled through Technological solutions',
+      organization: 'Founder, CEO Desintox Tech',
+      image: don,
     },
     {
       name: 'Vibin Varghese',
@@ -26,17 +27,19 @@ const Speakers = ({text,image,colour}) => {
       image: vibin,
     },
     {
+      name: 'Trishala Pillai',
+      role: 'Women in Tech',
+      organization: 'Board member at AnitaB.org',
+      image: trishala,
+    },
+    
+    {
       name: 'Kiran S Raj',
       role: 'Neurodivergence in Technology',
       organization: 'Lead Data Scientist at BuildNext | Lead Organizer at GDG Cloud Kochi\nLead at Code Vipassana by Google  AI/IA Influencer',
       image: kiran,
     },
-    {
-      name: 'Don Paul',
-      role: 'Enable differently-abled through Technological solutions',
-      organization: 'Founder, CEO Desintox Tech',
-      image: don,
-    },
+    
     {
       name: 'Anju Dinesh',
       role: 'Diversity, Equality, Inclusion',
@@ -68,8 +71,8 @@ const Speakers = ({text,image,colour}) => {
       
       <div>
         {speakersData.map((speaker, index) => (
-          <Fade top distance='40%'>
-          <div key={index} className='grid grid-cols-3 h-72 border-gray-500 rounded-md shadow-2xl row-span-3 m-4  border-opacity-30 overflow-hidden hover:scale-105 duration-300 bg-white'>
+          <motion.div initial="hidden" whileInView="visible" viewport={{once:true}}>
+          <div key={index} className={!ani?'grid grid-cols-3 h-72 border-gray-500 rounded-md shadow-2xl row-span-3 m-4  border-opacity-30 overflow-hidden hover:scale-105 duration-300 bg-white':'grid grid-cols-3 h-72 border-gray-500 rounded-md shadow-2xl row-span-3 m-4  border-opacity-30 overflow-hidden bg-white'}>
             <div className='col-span-2 p-4'>
               <div className='h-full flex flex-col text-left'>
                 <h1 className='text-3xl font-gbold text-black'>{speaker.name}</h1>
@@ -90,7 +93,7 @@ const Speakers = ({text,image,colour}) => {
               />
             </div>
           </div>
-          </Fade>
+          </motion.div>
         ))}
       </div>
       

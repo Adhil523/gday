@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 import gdsc from '../assets/gdsc-logo.png'
 import { FaPerson } from "react-icons/fa6";
 
-const Navbar = ({changeImage,changeText,changeColour}) => {
+const Navbar = ({changeImage,changeText,changeColour,changeAni}) => {
 
   const [toggle,changeToggle]=useState(false)
   const [image,setImage]=useState(false)
   const [text,setText]=useState(false)
   const [colour,setColour]=useState(false)
+  const [ani,setAni]=useState(false)
 
 
   const [bcolour,setBcolour]=useState(false)
@@ -36,6 +37,12 @@ const Navbar = ({changeImage,changeText,changeColour}) => {
     setBcolour2(!bcolour2)
     changeColour()
     
+  }
+
+  const handleAni = ()=>{
+    setAni(!ani)
+    changeAni()
+
   }
   
 
@@ -81,6 +88,12 @@ const Navbar = ({changeImage,changeText,changeColour}) => {
               <label className="label cursor-pointer">
               <span className="label-text text-black md:text-xl font-gbold">Monotone</span> 
               <input type="checkbox" className="toggle" onClick={handleColour}/>
+              </label>
+            </div>
+            <div className="form-control border-2 border-black rounded-lg my-4 md:max-w-[50%] md:mx-auto">
+              <label className="label cursor-pointer">
+              <span className="label-text text-black md:text-xl font-gbold">Disable animations</span> 
+              <input type="checkbox" className="toggle" onClick={handleAni}/>
               </label>
             </div>
 
