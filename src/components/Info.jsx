@@ -2,7 +2,7 @@ import React from 'react'
 import { AiOutlineBulb } from "react-icons/ai";
 import { MdPeopleAlt } from "react-icons/md";
 
-const Info = ({text,image}) => {
+const Info = ({text,image,colour }) => {
   return (
     <div className='w-full max-w-[1340px] h-auto sm:h-[57vh] mx-auto grid p-8 border-b-2 border-black'>
         <div>
@@ -17,7 +17,7 @@ const Info = ({text,image}) => {
                     <AiOutlineBulb color='orange' size={20}/>
                 </div>
                 <p className='font-gmed p-2 text-black'>Find out what neurodivergence is, and how it makes a difference to others</p>
-                <p className='font-gmed text-blue-600'>
+                <p className={!colour?'font-gmed text-blue-600':'font-gmed text-black'}>
                 <a className="link link-hover">Learn more</a>
                 </p>
             </div>
@@ -26,7 +26,7 @@ const Info = ({text,image}) => {
                     <MdPeopleAlt color='green' size={20}/>
                 </div>
                 <p className='font-gmed p-2 text-black'>Explore a variety of solutions and ideas to help overcome these</p>
-                <p className='font-gmed text-blue-600'>
+                <p className={!colour?'font-gmed text-blue-600':'font-gmed text-black'}>
                 <a className="link link-hover" href='https://info.kpmg.us/news-perspectives/technology-innovation/neurodiversity-in-tech.html'>Learn more</a>
                 </p>
             </div>

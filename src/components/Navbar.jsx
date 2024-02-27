@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import gdsc from '../assets/gdsc-logo.png'
 import { FaPerson } from "react-icons/fa6";
 
-const Navbar = ({changeImage,changeText}) => {
+const Navbar = ({changeImage,changeText,changeColour}) => {
 
   const [toggle,changeToggle]=useState(false)
   const [image,setImage]=useState(false)
@@ -33,6 +33,8 @@ const Navbar = ({changeImage,changeText}) => {
 
   const handleColour=()=>{
     setColour(!colour)
+    setBcolour2(!bcolour2)
+    changeColour()
     
   }
   
@@ -50,13 +52,19 @@ const Navbar = ({changeImage,changeText}) => {
         </div> */}
       </div>
       <div className='ml-auto my-4 '>
-        <button className='rounded-full text-base sm:text-lg text-white bg-blue-500 p-2 font-greg hover:bg-black ease-in-out duration-300' onClick={handleToggle}><FaPerson size={30}/></button>
+        <button className={!colour?'rounded-full text-base sm:text-lg text-white bg-blue-500 p-2 font-greg hover:bg-black ease-in-out duration-300':'rounded-full text-base sm:text-lg text-white bg-black p-2 font-greg hover:bg-black ease-in-out duration-300'} onClick={handleToggle}><FaPerson size={30}/></button>
       </div>
-      <div className={toggle ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500 flex:col' : 'fixed hidden top-0 left-[-100%] ease-in-out duration-500'}>
-        <h1 className='w-full sm:text-3xl text-lg font-bold text-white pt-3 m-2'>Test out our <span className='text-blue-500'>Neurodivergence</span> tools!</h1>
-        <div className='grid md:grid-cols-2 w-full mx-auto gap-6 p-8'>
-            <button className={!bcolour ? "btn btn-outline btn-xs sm:btn-sm md:btn-md lg:btn-lg" : "btn bg-slate-300 text-black btn-xs sm:btn-sm md:btn-md lg:btn-lg"} onClick={handleText}>Larger text</button>
-            <button className={!bcolour1 ? "btn btn-outline btn-xs sm:btn-sm md:btn-md lg:btn-lg" : "btn bg-slate-300 text-black btn-xs sm:btn-sm md:btn-md lg:btn-lg"} onClick={handleImage}>No images</button>
+      <div className={toggle ? 'fixed left-0 top-0 w-[100%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-500 flex:col z-50' : 'fixed hidden top-0 left-[-100%] ease-in-out duration-500'}>
+        <div className='flex justify-between pt-3 m-2'>
+        <h1 className='w-full sm:text-3xl text-lg font-bold text-black pt-3 m-2 text-center'>Test out our <span className={!colour?'text-blue-500':'text-black'}>Neurodivergence</span> tools!</h1>
+        <button className="btn btn-circle btn-outline object-contain" onClick={handleToggle}>
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
+</button>
+        </div>
+        <div className=' grid grid-cols-3 w-full mx-auto gap-6 p-8 m-8'>
+            <button className={!bcolour ? "btn btn-outline text-black" : "btn bg-slate-300 text-black "} onClick={handleText}>Larger text</button>
+            <button className={!bcolour1 ? "btn btn-outline text-black" : "btn bg-slate-300 text-black "} onClick={handleImage}>No images</button>
+            <button className={!bcolour2 ? "btn btn-outline text-black" : "btn bg-slate-300 text-black "} onClick={handleColour}>Mono-tone</button>
 
         </div>
     </div>

@@ -12,6 +12,7 @@ function App() {
 
   const [text,setText]=useState(false)
   const [image,setImage]=useState(false)
+  const [colour,setColour]=useState(false)
 
   const changeImage= ()=>{
     setImage(!image)
@@ -20,14 +21,19 @@ function App() {
     setText(!text)
   }
 
+  const changeColour = ()=>{
+    setColour(!colour)
+
+  }
+
 
   return (
     <div className="">
-      <Navbar changeImage={changeImage} changeText={changeText}/>
-      <Landing text={text} image={image}/>
+      <Navbar changeImage={changeImage} changeText={changeText} changeColour={changeColour}/>
+      <Landing text={text} image={image} colour={colour}/>
       <Gdsc/>
-      <Info text={text} image={image}/>
-      <Speakers text={text} image={image}/>
+      <Info text={text} image={image} colour={colour}/>
+      <Speakers text={text} image={image} colour={colour}/>
       {/* <Partners/> */}
       <Faq text={text} image={image}/>
       <Footer/>

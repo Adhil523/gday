@@ -3,7 +3,7 @@ import Pic1 from '../assets/pic1.png'
 import dino from '../assets/dinosaur.png'
 import { ReactTyped } from "react-typed";
 
-const Landing = ({text,image}) => {
+const Landing = ({text,image,colour}) => {
 
   console.log(image)
 
@@ -22,7 +22,13 @@ const Landing = ({text,image}) => {
 
       <div className=' flex-col sm:flex-row flex w-full sm:w-auto'>
         <div className='p-1 w-full sm:w-1/2 flex items-center justify-center sm:block'>
-          <button className='sm:ml-8 bg-blue-600 w-[200px] mx-auto rounded-lg py-2.5 font-medium text-white'>Register</button>
+          <a href="https://lu.ma/event/evt-TAqCi45Hfc3X9Ca">
+            <button className={!colour ? 'sm:ml-8 bg-blue-600 w-[200px] mx-auto rounded-lg py-2.5 font-medium text-white' : 'sm:ml-8 bg-black w-[200px] mx-auto rounded-lg py-2.5 font-medium text-white'}>
+              Register
+            </button>
+          </a>
+
+          {/* <button className={!colour?'sm:ml-8 bg-blue-600 w-[200px] mx-auto rounded-lg py-2.5 font-medium text-white' : 'sm:ml-8 bg-black w-[200px] mx-auto rounded-lg py-2.5 font-medium text-white'}>Register</button> */}
         </div>
         <img src={Pic1}  alt='/' className={!image ? 'sm:h-[30vh] mx-auto' : 'hidden'}></img>
       </div>

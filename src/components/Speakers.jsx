@@ -10,7 +10,7 @@ import reshmi from "../assets/reshmi.jpg"
 
 
 
-const Speakers = ({text,image}) => {
+const Speakers = ({text,image,colour}) => {
   const speakersData = [
     {
       name: 'Trishala Pillai',
@@ -99,8 +99,8 @@ const Speakers = ({text,image}) => {
   return (
     <div className='w-full max-w-[1340px] h-auto mx-auto grid'>
       <div className='w-[50%] mx-auto text-center'>
-        <h1 className='text-5xl font-gbold py-4 text-black'>Events for <span className='text-blue-600'>everyone.</span></h1>
-        <p className='p-2 font-gbold text-slate-900'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo at maiores iure asperiores iste, neque inventore cum ullam. Dolor, iure?</p>
+        <h1 className='text-5xl font-gbold py-4 text-black'>Events for <span className={!colour?'text-blue-600': 'text-black'}>everyone.</span></h1>
+        <p className='p-2 font-gbold text-slate-900'>Have a glance at the experts of their fields appearing for GDSC Day as speakers for each event.</p>
       </div>
 
 
