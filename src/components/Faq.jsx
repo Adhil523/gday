@@ -3,11 +3,11 @@ import React from 'react'
 const Faq = () => {
   const faq_details=[
     {qn:"What is GDSC Day",
-    ans:"Lorem ipsum"},
-    {qn:"What is does our theme mean?",
-    ans:"Lorem ipsum"},
+    ans:"GDSC Day is the first of its kind among the GDSC communities as we have planned an entire day for the tech-enthusiasts out there to explore more into the realm of technologies along with making a neurodivergent friendly environment to be more inclusive in our events."},
+    {qn:"What is our theme?",
+    ans:"GDSC Day is all about Tech x Inclusivity. Dive into technologies that can help make the world more inclusive and accesibile."},
     {qn:"How can we attend this event?",
-    ans:"Lorem ipsum"}
+    ans:"Pretty much clicking on our Register button can help you get here on March 2nd"}
 
   ]
   return (

@@ -7,6 +7,7 @@ import anju from "../assets/anju.jpeg"
 import ananya from "../assets/ananya.jpg"
 import arun from "../assets/arun.jpeg"
 import reshmi from "../assets/reshmi.jpg"
+import Fade from 'react-reveal/Fade'
 
 
 
@@ -64,8 +65,10 @@ const Speakers = ({text,image,colour}) => {
 
   const SpeakerList = () => {
     return (
+      
       <div>
         {speakersData.map((speaker, index) => (
+          <Fade top distance='40%'>
           <div key={index} className='grid grid-cols-3 h-72 border-gray-500 rounded-md shadow-2xl row-span-3 m-4  border-opacity-30 overflow-hidden hover:scale-105 duration-300 bg-white'>
             <div className='col-span-2 p-4'>
               <div className='h-full flex flex-col text-left'>
@@ -87,8 +90,10 @@ const Speakers = ({text,image,colour}) => {
               />
             </div>
           </div>
+          </Fade>
         ))}
       </div>
+      
     );
   }
 
@@ -99,8 +104,8 @@ const Speakers = ({text,image,colour}) => {
   return (
     <div className='w-full max-w-[1340px] h-auto mx-auto grid'>
       <div className='w-[50%] mx-auto text-center'>
-        <h1 className='text-5xl font-gbold py-4 text-black'>Events for <span className={!colour?'text-blue-600': 'text-black'}>everyone.</span></h1>
-        <p className='p-2 font-gbold text-slate-900'>Have a glance at the experts of their fields appearing for GDSC Day as speakers for each event.</p>
+        <h1 className='text-5xl font-gbold py-8 text-black mb-8'>Our <span className={!colour?'text-blue-600': 'text-black'}>Speakers.</span></h1>
+        {/* <p className='p-2 font-gbold text-slate-900'>Have a glance at the experts of their fields appearing for GDSC Day as speakers for each event.</p> */}
       </div>
 
 

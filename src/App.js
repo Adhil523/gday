@@ -6,6 +6,7 @@ import Speakers from "./components/Speakers";
 import Footer from "./components/Footer";
 import Faq from "./components/Faq";
 import Gdsc from "./components/Gdsc";
+import Fade from 'react-reveal/Fade'
 // import Partners from "./components/Partners";
 
 function App() {

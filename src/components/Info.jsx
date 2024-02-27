@@ -16,7 +16,7 @@ const Info = ({text,image,colour }) => {
                 <div className={!image?'block':'hidden'}>
                     <AiOutlineBulb color='orange' size={20}/>
                 </div>
-                <p className='font-gmed p-2 text-black'>Find out what neurodivergence is, and how it makes a difference to others</p>
+                <p className='font-gmed p-2 text-black'>Find out what <span className={!colour?"text-blue-600":"text-black"}>neurodivergence</span> is, and try out </p>
                 <p className={!colour?'font-gmed text-blue-600':'font-gmed text-black'}>
                 <a className="link link-hover">Learn more</a>
                 </p>

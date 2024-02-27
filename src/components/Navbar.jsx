@@ -61,10 +61,28 @@ const Navbar = ({changeImage,changeText,changeColour}) => {
   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
 </button>
         </div>
-        <div className=' grid grid-cols-3 w-full mx-auto gap-6 p-8 m-8'>
-            <button className={!bcolour ? "btn btn-outline text-black" : "btn bg-slate-300 text-black "} onClick={handleText}>Larger text</button>
+        <div className=' flex:col w-full mx-auto gap-6 p-8 md:m-8'>
+            {/* <button className={!bcolour ? "btn btn-outline text-black" : "btn bg-slate-300 text-black "} onClick={handleText}>Larger text</button>
             <button className={!bcolour1 ? "btn btn-outline text-black" : "btn bg-slate-300 text-black "} onClick={handleImage}>No images</button>
-            <button className={!bcolour2 ? "btn btn-outline text-black" : "btn bg-slate-300 text-black "} onClick={handleColour}>Mono-tone</button>
+            <button className={!bcolour2 ? "btn btn-outline text-black" : "btn bg-slate-300 text-black "} onClick={handleColour}>Mono-tone</button> */}
+            <div className="form-control my-4 border-2 border-black rounded-lg md:max-w-[50%] md:mx-auto">
+              <label className="label cursor-pointer">
+              <span className="label-text text-black md:text-xl font-gbold">No images</span> 
+              <input type="checkbox" className="toggle" onClick={handleImage}/>
+              </label>
+            </div>
+            <div className="form-control my-4 border-2 border-black rounded-lg md:max-w-[50%] md:mx-auto">
+              <label className="label cursor-pointer">
+              <span className="label-text text-black md:text-xl font-gbold">Larger text</span> 
+              <input type="checkbox" className="toggle" onClick={handleText}/>
+              </label>
+            </div>
+            <div className="form-control border-2 border-black rounded-lg my-4 md:max-w-[50%] md:mx-auto">
+              <label className="label cursor-pointer">
+              <span className="label-text text-black md:text-xl font-gbold">Monotone</span> 
+              <input type="checkbox" className="toggle" onClick={handleColour}/>
+              </label>
+            </div>
 
         </div>
     </div>
