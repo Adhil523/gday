@@ -77,7 +77,7 @@ const Speakers = ({text,image,colour,ani}) => {
               <div className='h-full flex flex-col text-left'>
                 <h1 className='text-3xl font-gbold text-black'>{speaker.name}</h1>
                 <h2 className='text-slate-500  font-greg'>{speaker.role}</h2>
-                <p className='py-4 font-gmed text-black text-sm md:text-xl'>{speaker.organization}</p>
+                <p className='py-4 font-gmed text-black text-base md:text-xl'>{speaker.organization}</p>
               </div>
             </div>
             <div className='relative overflow-hidden'>
