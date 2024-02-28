@@ -16,52 +16,52 @@ const Speakers = ({text,image,colour,ani}) => {
   const speakersData = [
     {
       name: 'Don Paul',
-      role: 'Enable differently-abled through Technological solutions',
-      organization: 'Founder, CEO Desintox Tech',
+      role: 'Fireside Chat: Tech for Inclusivity',
+      organization: 'Founder & CEO of  Desintox Technologies Pvt Ltd | TEDx speaker ',
       image: don,
     },
     {
       name: 'Vibin Varghese',
-      role: 'Autism',
-      organization: 'Founder & CEO - Metanoa',
+      role: 'Talk : AI solutions for Neurodivergence',
+      organization: 'Founder & CEO of Metanoa, a health care entrepreneur',
       image: vibin,
     },
     {
       name: 'Trishala Pillai',
-      role: 'Women in Tech',
-      organization: 'Board member at AnitaB.org',
+      role: 'Fireside Chat: DEI',
+      organization: 'Senior Product Manager- Walmart | Board Member at AnitaB.org. | Creator, Producer & Host of Newcomer Rise Up',
       image: trishala,
     },
     
     {
       name: 'Kiran S Raj',
-      role: 'Neurodivergence in Technology',
-      organization: 'Lead Data Scientist at BuildNext | Lead Organizer at GDG Cloud Kochi\nLead at Code Vipassana by Google  AI/IA Influencer',
+      role: 'Workshop; AI for Accesibility',
+      organization: 'Lead Data Scientist at BuildNext | Lead Organizer at GDG Cloud Kochi | Lead at Code Vipassana by Google | Development Junkie | AI/IA Influencer',
       image: kiran,
     },
     
     {
       name: 'Anju Dinesh',
-      role: 'Diversity, Equality, Inclusion',
-      organization: 'Board member at Tinkerhub Foundation',
+      role: 'Talk ; Building yourself and your career ',
+      organization: 'Senior Recruitment Consultant-impress.ai | Board Member - Tinkerhub Foundation | DEI Advocate',
       image: anju,
     },
     {
       name: 'Ananya R',
-      role: 'Diversity, Equality, Inclusion',
-      organization: 'Global Community Manager, She Loves Tech',
+      role: '#IamRemarkable Event',
+      organization: 'Global Community Manager at She Loves Tech | | DEI Advocate | Tedx Speaker',
       image: ananya,
     },
     {
       name: 'Arun C Rao',
-      role: 'Neurodivergence in Technology',
-      organization: 'Head of marketing - SignAble Communications',
+      role: 'Fireside Chat: Tech for Inclusivity',
+      organization: 'Head of Marketing at SignAble Communications | DEIB Consultant | Sign language professional',
       image: arun,
     },
     {
       name: 'Reshmi Ravindranathan',
-      role: 'Accessibility',
-      organization: 'Associate Consultant -TCS',
+      role: 'Fireside Chat: DEI',
+      organization: 'Mentor-facilitator at Inclusys | Digital Transformation Lead | Accessibility campaigner',
       image: reshmi,
     },
   ];
@@ -77,7 +77,7 @@ const Speakers = ({text,image,colour,ani}) => {
               <div className='h-full flex flex-col text-left'>
                 <h1 className='text-3xl font-gbold text-black'>{speaker.name}</h1>
                 <h2 className='text-slate-500  font-greg'>{speaker.role}</h2>
-                <p className='py-4 font-gmed text-black'>{speaker.organization}</p>
+                <p className='py-4 font-gmed text-black text-sm md:text-xl'>{speaker.organization}</p>
               </div>
             </div>
             <div className='relative overflow-hidden'>
