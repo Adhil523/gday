@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="">
       <Navbar changeImage={changeImage} changeText={changeText} changeColour={changeColour} changeAni={changeAni}/>
-      <Landing text={text} image={image} colour={colour}/>
+      <Landing text={text} image={image} colour={colour} ani={ani}/>
       <Gdsc text={text} image={image} colour={colour} />
       <Info text={text} image={image} colour={colour}/>
       <Speakers text={text} image={image} colour={colour} ani={ani}/>

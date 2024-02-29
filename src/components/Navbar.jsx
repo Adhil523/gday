@@ -60,6 +60,7 @@ const Navbar = ({changeImage,changeText,changeColour,changeAni}) => {
       </div>
       <div className='ml-auto my-4 '>
         <button className={!colour?'rounded-full text-base sm:text-lg text-white bg-blue-500 p-2 font-greg hover:bg-black ease-in-out duration-300':'rounded-full text-base sm:text-lg text-white bg-black p-2 font-greg hover:bg-black ease-in-out duration-300'} onClick={handleToggle}><FaPerson size={30}/></button>
+        <p className='font-gmed text-black'>Try me!</p>
       </div>
       <div className={toggle ? 'fixed left-0 top-0 w-[100%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-500 flex:col z-50' : 'fixed hidden top-0 left-[-100%] ease-in-out duration-500'}>
         <div className='flex justify-between pt-3 m-2'>

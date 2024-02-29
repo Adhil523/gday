@@ -3,7 +3,7 @@ import Pic1 from '../assets/pic1.png'
 import dino from '../assets/dinosaur.png'
 import { ReactTyped } from "react-typed";
 
-const Landing = ({text,image,colour}) => {
+const Landing = ({text,image,colour,ani}) => {
 
   console.log(image)
 
@@ -15,7 +15,8 @@ const Landing = ({text,image,colour}) => {
           <img alt='/' src={dino} className={!image?'w-10 h-6 object-contain':'hidden'}></img>
           <h1 className='text-xl font-greg text-black'><span className='font-gbold'>Google</span> Developers Student Clubs</h1>
         </div>
-        <ReactTyped strings={["GDSC Day"]} typeSpeed={120} backspeed={140} className='text-8xl text-black font-pixel pt-2 tracking-wider text'></ReactTyped>
+        {!ani ? <ReactTyped strings={["GDSC Day"]} typeSpeed={120} backspeed={140} className='text-8xl text-black font-pixel pt-2 tracking-wider text' showCursor={true}></ReactTyped> : <h1 className='text-8xl text-black font-pixel pt-2 tracking-wider text'>GDSC Day</h1> }
+        
         {/* <h1 className='text-8xl font-pixel pt-2 tracking-wider text'>GDSC day</h1> */}
         <h2 className='text-xl opacity-50 font-greg pl-4 text-slate-600'>March 2</h2>
       </div>
